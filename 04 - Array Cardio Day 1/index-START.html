@@ -51,6 +51,15 @@
 
     // Array.prototype.sort()
     // 3. Sort the inventors by birthdate, oldest to youngest
+    // returns two values and check if value1 is greater than value2, returning 1 for true and -1 for false. 
+    const ordered = inventors.sort(function(firstperson, secondperson) {
+      if(firstperson.year > secondperson.year) {
+        return 1
+      } else {
+        return -1
+      }
+    })
+    console.table(ordered)
 
     // Array.prototype.reduce()
     // 4. How many years did all the inventors live all together?
